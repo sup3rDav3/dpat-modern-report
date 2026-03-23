@@ -3,7 +3,6 @@
 A single-script patcher that modernizes the HTML report output of the
 [DPAT module](https://github.com/knavesec/Max) in knavesec/Max.
 
-![Dark theme with stat cards, sidebar navigation, and severity pills](https://i.imgur.com/placeholder.png)
 
 ## What it changes
 
@@ -63,6 +62,6 @@ cp max.py.bak max.py
 
 ## Notes
 
-- The patcher is idempotent — running it twice on an already-patched file does nothing
+- Running the patcher twice on an already-patched file does nothing
 - If a patch step shows `SKIPPED`, the upstream source has changed slightly in that area; the rest of the patches still apply and the report will still look modern
 - The sidebar links point to the filenames the tool generates — if a category has zero results the detail page will exist but show an empty table
